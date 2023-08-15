@@ -4,12 +4,11 @@ expose:
     enabled: true  
     certSource: auto
   ingress:
+    className: 'nginx'
     hosts:
       core: registry.magedu.com
       notary: notary.magedu.com
     controller: default
-    annotations: 
-      kubernetes.io/ingress.class: "nginx"
 
 ipFamily:
   ipv4:
